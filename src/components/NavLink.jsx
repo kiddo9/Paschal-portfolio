@@ -103,7 +103,7 @@ function NaavLink() {
      </div>
      <div className="flex gap-6 pr-4 border-r border-r-slate-400">
         {Icons.map((icons, index) => (
-           <Linkcard key={index} icon={icons.icon } /> 
+           <Linkcard key={index} icon={icons.icon } link={icons.link} /> 
         ))}
      </div>
      <div>
