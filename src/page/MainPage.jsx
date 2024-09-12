@@ -2,7 +2,7 @@ import More from "../components/More"
 import NavLink from "../components/NavLink"
 //import SlideBox from "../components/SlideBox"
 import About from "./About"
-import W from '../components/w'
+//import W from '../components/w'
 
 
 function Index() {
@@ -30,7 +30,7 @@ function Index() {
                   developer.
         </p>
        </div>
-       <div className="pt-12 mx-3 sm:mx-10 xl:mx-60 dark:text-white">
+       {/* <div className="pt-12 mx-3 sm:mx-10 xl:mx-60 dark:text-white">
         <h1 className="text-2xl font-bold">
           Education
         </h1>
@@ -47,7 +47,7 @@ function Index() {
           </div>
            <p>2022 - 2026</p>
         </div>
-       </div>
+       </div> */}
 
 
        <div className="pt-12 mx-3 sm:mx-10 xl:mx-60 dark:text-white">
@@ -67,7 +67,7 @@ function Index() {
         </p>
 
         <More />
-        <W />
+        {/* <W /> */}
        </div>
       {/* <SlideBox /> */}
     </div>

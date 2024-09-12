@@ -83,7 +83,7 @@ function More() {
       name: ' Portifolio web . ',
       d: 'This is a portfolio website built for a client. The front-end nd ui/ux was built nd designed by VAYUBA nd the admin panel and back-end was built by me. Here is the admin panel',
       img: '/Laravel - Google Chrome 6_29_2024 7_13_50 PM.png',
-      link: '',
+      link: 'https://my-portfolio-inky-kappa-24.vercel.app/',
       front: 'React',
           back: '',
           style: 'Tailwinds',

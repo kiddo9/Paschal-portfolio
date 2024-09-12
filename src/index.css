@@ -69,3 +69,10 @@
   }
 }*/
 /* Add these classes to your global styles or directly use Tailwind CSS utility classes in the component */
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}

@@ -97,11 +97,11 @@ function About() {
 
   return (
     <div className="">
-       <div className="grid grid-cols-2 gap-3 px-2 pt-5 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4">
+       <div className="grid grid-cols-4 gap-3 px-2 pt-5 sm:grid-cols-7 xl:grid-cols-9">
                 {Skills.map((skill, index) => (
-                <div className="flex items-center dark:text-[#252525] gap-2 p-2 dark:bg-white bg-black rounded-[2rem]" key={index}>
-                    <img src={skill.img} alt="" className="w-8 h-8 rounded-full" />
-                    <p className="text-lg font-bold text-white dark:text-[#252525]">{skill.name}</p>
+                <div className="flex items-center w-[5.3rem] sm:w-24 justify-center dark:text-[#252525] gap-2 p-2 dark:bg-white bg-black rounded-lg" key={index}>
+                    {/* <img src={skill.img} alt="" className="w-8 h-8 rounded-full" /> */}
+                    <p className="text-sm font-bold text-center text-white dark:text-[#252525]">{skill.name}</p>
                 </div>
             ))}
             </div>
