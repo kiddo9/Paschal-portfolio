@@ -59,7 +59,7 @@ function More() {
           name: ' E-commerce project. ',
           d: 'full stack Laravel(PHP) Developed with Laravel, php, Tailwinds, and javascript',
           img: '/lara.png',
-          link: 'http://paschalecomm2.000.pe',
+          link: 'http://paschalecomm2.great-site.net',
           front: 'blade',
               back: 'Laravel',
               style: 'Tailwinds',

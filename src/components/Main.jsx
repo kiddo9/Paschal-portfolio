@@ -261,7 +261,7 @@ function Main() {
             <Linkcard name='LinkedIn' link='https://www.linkedin.com/in/elechi-paschal-18ab85312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' />
             <Linkcard name='fiverr' link='https://www.fiverr.com/kido361' />
             <Linkcard name='Upwork' link='https://www.upwork.com/freelancers/~017128f9418ac6ac85' />
-            <Linkcard name='Github' link='github.com/kiddo9' />
+            <Linkcard name='Github' link='' />
           </div>
         </div>
     

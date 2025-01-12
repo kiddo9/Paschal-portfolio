@@ -1,7 +1,7 @@
 import  cn  from "../../components/magicui/marquee";
 
 interface MarqueeProps {
-  className?: string;
+  ClassName?: string;
   reverse?: boolean;
   pauseOnHover?: boolean;
   children?: React.ReactNode;
@@ -11,7 +11,7 @@ interface MarqueeProps {
 }
 
 export default function Marquee({
-  className,
+  ClassName,
   reverse,
   pauseOnHover = false,
   children,
@@ -28,7 +28,7 @@ export default function Marquee({
           "flex-row": !vertical,
           "flex-col": vertical,
         },
-        className,
+        ClassName,
       )}
     >
       {Array(repeat)

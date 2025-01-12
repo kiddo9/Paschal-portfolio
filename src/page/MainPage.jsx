@@ -7,7 +7,7 @@ import About from "./About"
 
 function Index() {
   return (
-    <div className="h-full bg-gray-100 dark:bg-black">
+    <div className="h-full bg-white dark:bg-black">
       <NavLink />
       <div className="items-center w-screen pt-2 sm:flex sm:mx-1 lg:justify-evenly">
         <h1 className="justify-center text-4xl font-bold text-center dark:text-white sm:text-left">
@@ -49,10 +49,25 @@ function Index() {
         </div>
        </div> */}
 
+      <div className="pt-12 mx-3 sm:mx-10 xl:mx-60 dark:text-white">
+       <h1 className="text-2xl font-bold">
+          SKILLS
+        </h1>
+        <div>
+        <ul>
+          <li>website development</li>
+          <li>Backend development</li>
+          <li>frontend development</li>
+          <li>mobile app development</li>
+          <li>Databases</li>
+        </ul>
+         
+        </div>
+       </div>
 
        <div className="pt-12 mx-3 sm:mx-10 xl:mx-60 dark:text-white">
        <h1 className="text-2xl font-bold">
-          SKILLS
+          Programming languages
         </h1>
         <About />
        </div>
