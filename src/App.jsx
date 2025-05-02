@@ -1,36 +1,20 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import More from "./components/More";
-import Index from "./page/MainPage";
-//import Loader from "./components/Loader";
-//import { useEffect, useState } from "react";
-import About from "./page/About";
+import { Suspense, lazy } from "react";
+import Loader from "./components/Loader";
 
+// Lazy load the page
+const Index = lazy(() => import("./page/MainPage"));
 
 function App() {
-  // const [load, setload] = useState(true)
-
-  // useEffect(() => {
-  //   const load = setTimeout(() => {
-  //     setload(false)
-  //   }, 19000)
-
-  //   return () => clearTimeout(load)
-  // }, [])
-
   return (
-    <div>
-      {/* {load ?<Loader /> : ''} */}
-      
-      <BrowserRouter>
-      <Routes>
-        <Route index element={  <Index />} />
-        <Route path="/more" element={<More />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-      </BrowserRouter>
-    </div>
-  )
+    <BrowserRouter>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route index element={<Index />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
