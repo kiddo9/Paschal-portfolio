@@ -1,119 +1,27 @@
 [
   {
-    "id": 1,
-    "name": "Resturant (full stack)",
-    "d": "This is a static web landing page show the necessary information about the Resturant",
-    "img": "/Resturant.png",
-    "link": "https://restaurant-chi-two.vercel.app/",
-    "GitHub": "https://github.com/kiddo9/Restaurant",
+    "id": 10,
+    "name": "nctmobile backend Logic (Backend)",
+    "d": "This is the backend logic for the nctmobile app. It is built with Node.js and uses graphql for routing. The database is postgres and the ORM is Sequelize.",
+    "img": "/Screenshot 2025-04-30 at 2.11.36 PM.png",
+    "link": "https://nctmobile-production.up.railway.app/graphql",
+    "GitHub": "https://github.com/kiddo9/nctmobile",
     "linkedIn": "",
-    "year": "2024",
-    "skills": [
-      "React.js",
-      "Tailwind CSS",
-      "REST API Development",
-      "Sequelize ORM",
-      "Node.js (Express)",
-      "PostgreSQL",
-      "Git & GitHub"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Marina Havan Hotel (landing page)",
-    "d": "This is a static web landing page show the necessary information about the hotel",
-    "img": "/hotel.png",
-    "link": "https://m-hotel-beryl.vercel.app/",
-    "GitHub": "https://github.com/kiddo9/MHotel",
-    "linkedIn": "",
-    "year": "2024",
-    "skills": ["React.js", "Tailwind CSS", "Git & GitHub"]
-  },
-  {
-    "id": 3,
-    "name": "Luxary Hotel (Landing page)",
-    "d": "This is a static web landing page show the necessary information about the hotel",
-    "img": "/luxuray.png",
-    "link": "https://hotel-booking-ecru.vercel.app/",
-    "GitHub": "https://github.com/kiddo9/Hotel-Booking",
-    "linkedIn": "",
-    "year": "2024",
-    "skills": ["React.js", "Tailwind CSS", "Git & GitHub"]
-  },
-  {
-    "id": 4,
-    "name": "E-commerce (full stack)",
-    "d": "full stack Laravel(PHP) Developed with Laravel, php, Tailwinds, and javascript",
-    "img": "/lara.png",
-    "link": "http://paschalecomm2.great-site.net",
-    "GitHub": "https://github.com/kiddo9/E-commerce-shop",
-    "linkedIn": "https://www.linkedin.com/feed/update/urn:li:activity:7304064033941266432/?originTrackingId=%2BRbgCRBZRbSzff%2BfumWt6A%3D%3D",
-    "year": "2024",
-    "skills": [
-      "Laravel (PHP)",
-      "Elequent ORM",
-      "REST API Development",
-      "MySQL",
-      "Tailwind CSS",
-      "JavaScript (Frontend use)",
-      "Git & GitHub"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Portifolio web (Backend)",
-    "d": "This is a portfolio website built for a client. The front-end nd ui/ux was built nd designed by VAYUBA nd the admin panel and back-end was built by me",
-    "img": "/AdebisiTobi - Google Chrome 8_17_2024 2_35_15 PM.png",
-    "link": "https://adebisitobi-portfolio.vercel.app",
-    "GitHub": "https://github.com/kiddo9/ade-node-backend",
-    "linkedIn": "https://www.linkedin.com/feed/update/urn:li:activity:7237083913058197504/?originTrackingId=8LTz0KvYR4mXRhA58BWI2g%3D%3D",
-    "year": "2024",
-    "skills": [
-      "React.js",
-      "Tailwind CSS",
-      "REST API Development",
-      "Sequelize ORM",
-      "Node.js (Express)",
-      "PostgreSQL",
-      "Git & GitHub"
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Travel mobile app (full stack)",
-    "d": "This is a mobile which is used to book hotels, flights, and other travel-related services. It is built with React Native and uses Tailwind CSS for styling.",
-    "img": "/Screenshot 2025-02-10 at 7.48.30 PM.png",
-    "link": "",
-    "GitHub": "https://github.com/kiddo9/mobileApp",
-    "linkedIn": "https://www.linkedin.com/feed/update/urn:li:activity:7303927087948607489/?originTrackingId=qBbn%2Br41SLOZznfEH%2BTtgg%3D%3D",
     "year": "2025",
     "skills": [
-      "React Native",
-      "Tailwind CSS",
-      "REST API Development",
-      "Sequelize ORM",
-      "Node.js (Express)",
-      "PostgreSQL",
-      "Git & GitHub"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "NGO Admin panel (full stack)",
-    "d": "This is an admin panel for an NGO website that allows the admin to manage the website's content, users, and donations. It is built with Laravel and uses Tailwind CSS for styling.",
-    "img": "/Screenshot 2025-04-30 at 1.45.19 PM.png",
-    "link": "https://info-ifu.de/",
-    "GitHub": "https://github.com/kiddo9/ifu-backend-Admin",
-    "linkedIn": "",
-    "year": "2024",
-    "skills": [
-      "Laravel (PHP)",
-      "Elequent ORM",
-      "REST API Development",
-      "MySQL",
-      "Tailwind CSS",
-      "JavaScript (Frontend use)",
-      "Git & GitHub"
+      "nodejs",
+      "expressjs",
+      "graphql",
+      "sequelize",
+      "postgres",
+      "git",
+      "github",
+      "githubactions",
+      "docker",
+      "Docker Hub",
+      "azure",
+      "Pusher (WebSockets/Real-Time)",
+      "graphql"
     ]
   },
   {
@@ -126,21 +34,157 @@
     "linkedIn": "https://www.linkedin.com/feed/update/urn:li:activity:7318330926042599425/?originTrackingId=pjIyiU9vTZmbGMagNI355g%3D%3D",
     "year": "2025",
     "skills": [
-      "Laravel (PHP)",
+      "laravel",
+      "php",
       "Elequent ORM",
-      "REST API Development",
-      "MySQL",
-      "Tailwind CSS",
-      "JavaScript (Frontend use)",
-      "Git & GitHub",
-      "Laravel Livewire",
-      "GitHub Actions (CI/CD)",
-      "Docker",
+      "restApi",
+      "mysql",
+      "tailwindcss",
+      "js",
+      "git",
+      "github",
+      "laravel",
+      "livewire",
+      "githubactions",
+      "docker",
       "Docker Hub",
       "Pusher (WebSockets/Real-Time)",
-      "Redis"
+      "redis"
     ]
   },
+  {
+    "id": 4,
+    "name": "E-commerce (full stack)",
+    "d": "full stack Laravel(PHP) Developed with Laravel, php, Tailwinds, and javascript",
+    "img": "/lara.png",
+    "link": "http://paschalecomm2.great-site.net",
+    "GitHub": "https://github.com/kiddo9/E-commerce-shop",
+    "linkedIn": "https://www.linkedin.com/feed/update/urn:li:activity:7304064033941266432/?originTrackingId=%2BRbgCRBZRbSzff%2BfumWt6A%3D%3D",
+    "year": "2024",
+    "skills": [
+      "laravel",
+      "php",
+      "Elequent ORM",
+      "restApi",
+      "mysql",
+      "tailwindcss",
+      "JavaScript (Frontend use)",
+      "git",
+      "github"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Travel mobile app (full stack)",
+    "d": "This is a mobile which is used to book hotels, flights, and other travel-related services. It is built with React Native and uses tailwindcss for styling.",
+    "img": "/Screenshot 2025-02-10 at 7.48.30 PM.png",
+    "link": "",
+    "GitHub": "https://github.com/kiddo9/mobileApp",
+    "linkedIn": "https://www.linkedin.com/feed/update/urn:li:activity:7303927087948607489/?originTrackingId=qBbn%2Br41SLOZznfEH%2BTtgg%3D%3D",
+    "year": "2025",
+    "skills": [
+      "react",
+      "react Native",
+      "tailwindcss",
+      "restApi",
+      "sequelize",
+      "nodejs",
+      "expressjs",
+      "postgres",
+      "git",
+      "github",
+      "expo",
+      "xcode"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Resturant (full stack)",
+    "d": "This is a static web landing page show the necessary information about the Resturant",
+    "img": "/Resturant.png",
+    "link": "https://restaurant-chi-two.vercel.app/",
+    "GitHub": "https://github.com/kiddo9/Restaurant",
+    "linkedIn": "",
+    "year": "2024",
+    "skills": [
+      "react",
+      "tailwindcss",
+      "restApi",
+      "sequelize",
+      "nodejs",
+      "expressjs",
+      "postgres",
+      "git",
+      "github"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Marina Havan Hotel (landing page)",
+    "d": "This is a static web landing page show the necessary information about the hotel",
+    "img": "/hotel.png",
+    "link": "https://m-hotel-beryl.vercel.app/",
+    "GitHub": "https://github.com/kiddo9/MHotel",
+    "linkedIn": "",
+    "year": "2024",
+    "skills": ["react", "tailwindcss", "git", "github"]
+  },
+  {
+    "id": 3,
+    "name": "Luxary Hotel (Landing page)",
+    "d": "This is a static web landing page show the necessary information about the hotel",
+    "img": "/luxuray.png",
+    "link": "https://hotel-booking-ecru.vercel.app/",
+    "GitHub": "https://github.com/kiddo9/Hotel-Booking",
+    "linkedIn": "",
+    "year": "2024",
+    "skills": ["react", "tailwindcss", "git", "github"]
+  },
+
+  {
+    "id": 5,
+    "name": "Portifolio web (Backend)",
+    "d": "This is a portfolio website built for a client. The front-end nd ui/ux was built nd designed by VAYUBA nd the admin panel and back-end was built by me",
+    "img": "/AdebisiTobi - Google Chrome 8_17_2024 2_35_15 PM.png",
+    "link": "https://adebisitobi-portfolio.vercel.app",
+    "GitHub": "https://github.com/kiddo9/ade-node-backend",
+    "linkedIn": "https://www.linkedin.com/feed/update/urn:li:activity:7237083913058197504/?originTrackingId=8LTz0KvYR4mXRhA58BWI2g%3D%3D",
+    "year": "2024",
+    "skills": [
+      "react",
+      "tailwindcss",
+      "restApi",
+      "sequelize",
+      "nodejs",
+      "expressjs",
+      "postgres",
+      "git",
+      "github"
+    ]
+  },
+
+  {
+    "id": 7,
+    "name": "NGO Admin panel (full stack)",
+    "d": "This is an admin panel for an NGO website that allows the admin to manage the website's content, users, and donations. It is built with Laravel and uses tailwindcss for styling.",
+    "img": "/Screenshot 2025-04-30 at 1.45.19 PM.png",
+    "link": "https://info-ifu.de/",
+    "GitHub": "https://github.com/kiddo9/ifu-backend-Admin",
+    "linkedIn": "",
+    "year": "2024",
+    "skills": [
+      "laravel",
+      "php",
+      "Elequent ORM",
+      "restApi",
+      "mysql",
+      "tailwindcss",
+      "JavaScript (Frontend use)",
+      "git",
+      "github"
+    ]
+  },
+
   {
     "id": 9,
     "name": " NGO frontend(full stack)",
@@ -150,29 +194,6 @@
     "GitHub": "https://github.com/kiddo9/ifu-backend-Admin",
     "linkedIn": "",
     "year": "2024",
-    "skills": ["React.js", "Tailwind CSS", "Git & GitHub"]
-  },
-  {
-    "id": 10,
-    "name": "nctmobile backend Logic (Backend)",
-    "d": "This is the backend logic for the nctmobile app. It is built with Node.js and uses graphql for routing. The database is PostgreSQL and the ORM is Sequelize.",
-    "img": "/Screenshot 2025-04-30 at 2.11.36 PM.png",
-    "link": "https://nctmobile-production.up.railway.app/graphql",
-    "GitHub": "https://github.com/kiddo9/nctmobile",
-    "linkedIn": "",
-    "year": "2025",
-    "skills": [
-      "Node.js (Express)",
-      "GraphQL API Development",
-      "Sequelize ORM",
-      "PostgreSQL",
-      "Git & GitHub",
-      "GitHub Actions (CI/CD)",
-      "Docker",
-      "Docker Hub",
-      "Railway Deployment",
-      "Pusher (WebSockets/Real-Time)",
-      "GraphQL (Apollo Server)"
-    ]
+    "skills": ["react", "tailwindcss", "git", "github"]
   }
 ]

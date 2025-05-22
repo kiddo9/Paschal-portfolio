@@ -1,40 +1,53 @@
-{
-  "Frontend": {
-    "React.js": "80%",
-    "React Native": "75%",
-    "Laravel Livewire": "80%",
-    "HTML5": "90%",
-    "CSS3": "65%",
-    "JavaScript (Frontend use)": "80%",
-    "Tailwind CSS": "80%"
-  },
-  "Backend": {
-    "Laravel (PHP)": "90%",
-    "Node.js (Express)": "85%",
-    "GraphQL (Apollo Server)": "70%",
-    "Sequelize ORM": "75%",
-    "Elequent ORM": "75%",
-    "REST API Development": "85%",
-    "GraphQL API Development": "70%",
-    "Go (Golang)": "20%"
-  },
-  "Database": {
-    "MySQL": "85%",
-    "PostgreSQL": "75%",
-    "Redis": "70%"
-  },
-  "DevOps and Cloud": {
-    "Git & GitHub": "90%",
-    "GitHub Actions (CI/CD)": "80%",
-    "Docker": "80%",
-    "Docker Hub": "75%",
-    "Railway Deployment": "75%",
-    "Pusher (WebSockets/Real-Time)": "85%",
-    "Azure": "40%",
-    "Nginx": "30%"
-  },
-  "Other and Learning": {
-    "Solidity": "5%",
-    "Laravel Horizon": "0%"
+[
+  {
+    "TopSkill": [
+      "laravel",
+      "nodejs",
+      "js",
+      "ts",
+      "sequelize",
+      "expressjs",
+      "postgres",
+      "mysql",
+      "redis",
+      "docker",
+      "githubactions",
+      "nginx",
+      "graphql",
+      "git",
+      "github",
+      "vscode",
+      "postman",
+      "azure"
+    ],
+
+    "AllSkill": [
+      "html",
+      "css",
+      "js",
+      "ts",
+      "sequelize",
+      "react",
+      "nodejs",
+      "php",
+      "laravel",
+      "docker",
+      "git",
+      "github",
+      "redis",
+      "go",
+      "kubernetes",
+      "nginx",
+      "azure",
+      "kubernetes",
+      "githubactions",
+      "postman",
+      "sequelize",
+      "graphql",
+      "mysql",
+      "postgres",
+      "solidity",
+      "vscode"
+    ]
   }
-}
+]
