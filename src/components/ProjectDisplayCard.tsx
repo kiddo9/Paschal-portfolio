@@ -10,11 +10,12 @@ function ProjectDisplayCard({
   description,
   stack,
   linkedIn,
+  access,
 }: any) {
   return (
     <div className="border-[0.001rem] px-3 py-2 border-[#838383] rounded-lg">
       <div className="flex justify-between items-center">
-        <div className="flex items-center gap-3">
+        <a href={access} className="flex items-center gap-3">
           {type == "img" ? (
             <div className="px-2 py-2 rounded-lg bg-[#252525]">
               {" "}
@@ -24,7 +25,7 @@ function ProjectDisplayCard({
             logo
           )}{" "}
           <p className="text-md font-semibold text-gray-300">{name}</p>
-        </div>
+        </a>
 
         <div className="flex gap-4">
           <div className="flex gap-2 items-center">

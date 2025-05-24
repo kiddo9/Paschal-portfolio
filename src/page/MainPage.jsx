@@ -36,6 +36,7 @@ function Index() {
       <div className="flex flex-col gap-10 flex-wrap md:grid grid-cols-2 mt-10">
         {Projects.slice(0, 4).map((project) => (
           <ProjectDisplayCard
+            access={project.link}
             key={project.id}
             name={project.name}
             description={project.d}

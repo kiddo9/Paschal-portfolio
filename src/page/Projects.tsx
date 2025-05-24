@@ -74,6 +74,7 @@ const Projects = () => {
           })
           .map((project: any) => (
             <ProjectDisplayCard
+              access={project.link}
               key={project.id}
               name={project.name}
               description={project.d}
