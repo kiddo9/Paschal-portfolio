@@ -18,9 +18,8 @@
       "github",
       "githubactions",
       "docker",
-      "Docker Hub",
       "azure",
-      "Pusher (WebSockets/Real-Time)",
+      "websocket",
       "graphql"
     ]
   },
@@ -36,7 +35,7 @@
     "skills": [
       "laravel",
       "php",
-      "Elequent ORM",
+      "Elequent",
       "restApi",
       "mysql",
       "tailwindcss",
@@ -47,8 +46,7 @@
       "livewire",
       "githubactions",
       "docker",
-      "Docker Hub",
-      "Pusher (WebSockets/Real-Time)",
+      "websocket",
       "redis"
     ]
   },
@@ -64,11 +62,11 @@
     "skills": [
       "laravel",
       "php",
-      "Elequent ORM",
+      "Elequent",
       "restApi",
       "mysql",
       "tailwindcss",
-      "JavaScript (Frontend use)",
+      "javascript",
       "git",
       "github"
     ]
@@ -84,7 +82,6 @@
     "year": "2025",
     "skills": [
       "react",
-      "react Native",
       "tailwindcss",
       "restApi",
       "sequelize",
@@ -175,11 +172,11 @@
     "skills": [
       "laravel",
       "php",
-      "Elequent ORM",
+      "Elequent",
       "restApi",
       "mysql",
       "tailwindcss",
-      "JavaScript (Frontend use)",
+      "javascript",
       "git",
       "github"
     ]

@@ -13,18 +13,14 @@ function ProjectDisplayCard({
   access,
 }: any) {
   return (
-    <div className="border-[0.001rem] px-3 py-2 border-[#838383] rounded-lg">
+    <div className="border-[0.001rem] px-3 py-3 border-[#838383] rounded-lg">
       <div className="flex justify-between items-center">
-        <a href={access} className="flex items-center gap-3">
-          {type == "img" ? (
-            <div className="px-2 py-2 rounded-lg bg-[#252525]">
-              {" "}
-              <img className="w-10 h-10 rounded-xl" src={`${logo}`} />
-            </div>
-          ) : (
-            logo
-          )}{" "}
-          <p className="text-md font-semibold text-gray-300">{name}</p>
+        <a
+          href={access}
+          className="flex items-center gap-3 hover:border-b border-dashed border-white transition-all duration-100 ease-in-out"
+        >
+          {type == "img" ? "" : logo}{" "}
+          <p className="text-md font-medium text-gray-300">{name}</p>
         </a>
 
         <div className="flex gap-4">
@@ -75,7 +71,7 @@ function ProjectDisplayCard({
 
       <p className="mt-2 text-sm text-[#838383]">{description}</p>
 
-      <div className="flex gap-4 flex-wrap mt-4">
+      <div className="flex gap-7 overflow-x-scroll  Scroll mt-4">
         {Array.isArray(stack)
           ? stack.map((techStack, index) => (
               <StackCard setName={true} key={index} stackName={techStack} />

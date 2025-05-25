@@ -1,13 +1,15 @@
+import { NavLink } from "react-router-dom";
 import Projects from "../assets/projects.json";
 import Skills from "../assets/skills.json";
 import ProjectDisplayCard from "../components/ProjectDisplayCard";
 import StackCard from "../components/StackCard";
+import FadeUp from "../components/FadeUp";
 
 function Index() {
   return (
-    <div className="px-3 lg:px-20 h-full">
+    <FadeUp>
       <div className="flex">
-        <p className="text-gray-300 px-3 pt-10 leading-8">
+        <p className="text-gray-300 leading-8">
           Hey there! I am <b className="font-semibold">Paschal Elechi</b>. I'm a
           Backend and DevOps Developer with a strong focus on backend
           development and a passion for building scalable, real-time
@@ -28,12 +30,12 @@ function Index() {
             (Backend & DevOps)
           </span>
         </h2>
-        <a href="/projects" className="text-[#838383]">
+        <NavLink to="/projects" className="text-[#838383]">
           View more
-        </a>
+        </NavLink>
       </div>
 
-      <div className="flex flex-col gap-10 flex-wrap md:grid grid-cols-2 mt-10">
+      <div className=" gap-10  grid-cols-1 grid md:grid-cols-2 mt-10">
         {Projects.slice(0, 4).map((project) => (
           <ProjectDisplayCard
             access={project.link}
@@ -42,7 +44,6 @@ function Index() {
             description={project.d}
             stack={project.skills}
             linkedIn={project.linkedIn}
-            logo={project.img}
             github={project.GitHub}
             type="img"
           />
@@ -51,7 +52,7 @@ function Index() {
 
       <div className="mt-10">
         <h1 className="text-xl flex justify-between text-[#838383]">
-          Top Skill <span>see all</span>
+          Top Skill <NavLink to={"/skills"}>see all</NavLink>
         </h1>
         <div className="flex flex-wrap gap-3 mt-4">
           {Skills.map((skillGroup, groupIndex) =>
@@ -61,38 +62,7 @@ function Index() {
           )}
         </div>
       </div>
-      <style>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateX(-20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-
-        @keyframes fadeOut {
-          from {
-            opacity: 1;
-            transform: translateX(0);
-          }
-          to {
-            opacity: 0;
-            transform: translateX(20px);
-          }
-        }
-
-        .animate-fadeIn {
-          animation: fadeIn 1s ease-in-out forwards;
-        }
-
-        .animate-fadeOut {
-          animation: fadeOut 1s ease-in-out forwards;
-        }
-      `}</style>
-    </div>
+    </FadeUp>
   );
 }
 
