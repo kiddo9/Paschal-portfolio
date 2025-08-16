@@ -3,6 +3,7 @@
     "TopSkill": [
       "laravel",
       "nodejs",
+      "go",
       "js",
       "ts",
       "sequelize",
@@ -44,6 +45,7 @@
       "postman",
       "sequelize",
       "graphql",
+      "grpc",
       "mysql",
       "postgres",
       "solidity",

@@ -1,5 +1,24 @@
 [
   {
+    "id": 11,
+    "name": "EMS (Employee Management System) (full stack)",
+    "d": "This is a system that allows the admin to manage employees, departments, and other related information. It is built with React typescript, Golang and mysql database.",
+    "img": "/Screenshot 2025-04-30 at 2.11.36 PM.png",
+    "link": "",
+    "GitHub": "https://github.com/kiddo9/EMS",
+    "linkedIn": "",
+    "year": "2025",
+    "skills": [
+      "go",
+      "react",
+      "typescript",
+      "mysql",
+      "git",
+      "github",
+      "githubactions"
+    ]
+  },
+  {
     "id": 10,
     "name": "nctmobile backend Logic (Backend)",
     "d": "This is the backend logic for the nctmobile app. It is built with Node.js and uses graphql for routing. The database is postgres and the ORM is Sequelize.",
@@ -21,6 +40,52 @@
       "azure",
       "websocket",
       "graphql"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "CBT question Bank system (full stack)",
+    "d": "This a system that allows only authoraized users to upload question for cbt and review the questions. It was built with React, Nodejs, Expressjs, Sequelize, mysql and Nginx.",
+    "img": "/lara.png",
+    "link": "https://cbtquestionbank.publicvm.com/",
+    "GitHub": "https://github.com/kiddo9/nct_question_back",
+    "linkedIn": "https://www.linkedin.com/posts/paschal-elechi-18ab85312_internship-neocloud-webdevelopment-activity-7336439311048810497-0z43?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-NTroBocJcBNtUTCcPgjJTkQU6wpUL2uo",
+    "year": "2025",
+    "skills": [
+      "nodejs",
+      "react",
+      "expressjs",
+      "restApi",
+      "mysql",
+      "tailwindcss",
+      "javascript",
+      "git",
+      "github",
+      "githubactions",
+      "docker",
+      "nginx",
+      "sequelize"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Alumini system (full stack)",
+    "d": "This is a system that allows the admin to manage alumni, departments, and other related information. It is built with Laravel and uses tailwindcss for styling. it also allows alumni to register and login to the system chat with each other and the admin.",
+    "img": "/lara.png",
+    "link": "",
+    "GitHub": "",
+    "linkedIn": "",
+    "year": "2025",
+    "skills": [
+      "laravel",
+      "php",
+      "Elequent",
+      "restApi",
+      "mysql",
+      "tailwindcss",
+      "javascript",
+      "git",
+      "github"
     ]
   },
   {
@@ -116,6 +181,27 @@
     ]
   },
   {
+    "id": 13,
+    "name": "Laundry system (full stack)",
+    "d": "This is a system that allows the admin to manage laundry, customers, and other related information. It is built with Laravel and uses tailwindcss for styling. it also has features like daily reports, customer management, laundry management, stock management, master settings and more",
+    "img": "/lara.png",
+    "link": "",
+    "GitHub": "",
+    "linkedIn": "",
+    "year": "2025",
+    "skills": [
+      "laravel",
+      "php",
+      "Elequent",
+      "restApi",
+      "mysql",
+      "tailwindcss",
+      "javascript",
+      "git",
+      "github"
+    ]
+  },
+  {
     "id": 2,
     "name": "Marina Havan Hotel (landing page)",
     "d": "This is a static web landing page show the necessary information about the hotel",
@@ -192,5 +278,47 @@
     "linkedIn": "",
     "year": "2024",
     "skills": ["react", "tailwindcss", "git", "github"]
+  },
+  {
+    "id": 14,
+    "name": "LMS (learning management system) (full stack)",
+    "d": "This system is designed to facilitate the management of learning activities, including course creation, student enrollment, and progress tracking. It is built with Laravel and uses tailwindcss for styling. The system allows for easy management of courses, students, and instructors.",
+    "img": "/lara.png",
+    "link": "",
+    "GitHub": "",
+    "linkedIn": "",
+    "year": "2025",
+    "skills": [
+      "laravel",
+      "php",
+      "Elequent",
+      "restApi",
+      "mysql",
+      "tailwindcss",
+      "javascript",
+      "git",
+      "github",
+      "docker",
+      "githubactions"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "SMS MAIL SYSTEM (full stack)",
+    "d": "This is a system that allows admin send sms and mails to multiple users at once. it is still under development. It is built with React typescript, Golang, gRPC and uses tailwindcss for styling. it also allows admin to manage other admin users, sms, and mails.",
+    "img": "/Screenshot 2025-04-30 at 2.11.36 PM.png",
+    "link": "",
+    "GitHub": "https://github.com/kiddo9/SMS-MAIL-SERVER",
+    "linkedIn": "",
+    "year": "2025",
+    "skills": [
+      "go",
+      "react",
+      "typescript",
+      "grpc",
+      "git",
+      "github",
+      "githubactions"
+    ]
   }
 ]

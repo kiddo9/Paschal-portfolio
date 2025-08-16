@@ -13,13 +13,12 @@ function Index() {
           Hey there! I am <b className="font-semibold">Paschal Elechi</b>. I'm a
           Backend and DevOps Developer with a strong focus on backend
           development and a passion for building scalable, real-time
-          applications. I work with technologies like Laravel, Node.js and
-          React, and I’m actively growing my skills in Go and Solidity. I’ve
-          built chat systems, Admin panels, and e-commerce platforms—always
-          pushing for clean code, optimized performance, and real-world impact.
-          I love working on projects that challenge me to think deeper about
-          system architecture, real-time communication, and problem-solving at
-          scale.
+          applications. I work with technologies like Laravel, Node.js, Golang
+          and React. I’ve built chat systems, Admin panels, and e-commerce
+          platforms—always pushing for clean code, optimized performance, and
+          real-world impact. I love working on projects that challenge me to
+          think deeper about system architecture, real-time communication, and
+          problem-solving at scale.
         </p>
       </div>
 
@@ -31,7 +30,7 @@ function Index() {
           </span>
         </h2>
         <NavLink to="/projects" className="text-[#838383]">
-          View more
+          View more({Projects.length})
         </NavLink>
       </div>
 

@@ -16,8 +16,8 @@ import FadeUp from "../components/FadeUp";
 const ResumeTemplate = () => {
   function handleDownload() {
     const link = document.createElement("a");
-    link.href = "/ELECHI-PASCHAL-CHINEMELUM-CV-Resume-20240712.pdf"; // Must be a valid URL or public file
-    link.download = "/ELECHI-PASCHAL-CHINEMELUM-CV-Resume-20240712.pdf"; // Optional: custom file name
+    link.href = "/Resume.pdf"; // Must be a valid URL or public file
+    link.download = "/Resume.pdf"; // Optional: custom file name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -463,7 +463,7 @@ const ResumeTemplate = () => {
               d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
             />
           </svg>
-          Resume as PDF
+          Full Download Resume
         </button>
       </div>
     </FadeUp>
