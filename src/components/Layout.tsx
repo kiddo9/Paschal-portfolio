@@ -1,13 +1,22 @@
 import React from "react";
-import Nav from "./../components/NavLink";
+import Nav from "./../components/NavLink"; // Ensure this matches your filename
 import Footer from "./Footer";
 
 const Layout = ({ children }: any) => {
   return (
-    <div className="bg-[#151515]  ">
-      <div className="flex flex-col space-y-10 w-full md:max-w-4xl mx-auto px-4 py-4 sm:px-6 relative">
+    // min-h-screen ensures the background covers the whole screen
+    // flex-col + justify-between pushes the footer to the bottom
+    <div className="min-h-screen bg-[#151515] text-gray-300 font-sans flex flex-col">
+      <div className="w-full max-w-5xl mx-auto px-6 flex flex-col min-h-screen">
+        {/* Navigation */}
         <Nav />
-        <div className="h-full">{children}</div>
+
+        {/* Main Content: Grow fills available space */}
+        <main className="flex-grow py-10 flex flex-col justify-center">
+          {children}
+        </main>
+
+        {/* Footer */}
         <Footer />
       </div>
     </div>

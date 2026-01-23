@@ -110,6 +110,14 @@ html {
 .loader::after {
   animation-delay: 1s;
 }
+/* index.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 @keyframes animloader {
   0% {

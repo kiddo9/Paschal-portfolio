@@ -1,101 +1,116 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import {
+  Github,
+  Linkedin,
+  Briefcase,
+  FileText,
+  Code,
+  Mail,
+} from "lucide-react";
 import DarkLightMode from "./DarkMode";
 
-import { NavLink } from "react-router-dom";
-
 function NaavLink() {
+  // Common link styles
+  const linkStyles = ({ isActive }: any) =>
+    `flex flex-col md:flex-row items-center gap-1 text-xs md:text-sm font-medium transition-colors ${
+      isActive ? "text-white" : "text-gray-500 hover:text-gray-300"
+    }`;
+
   return (
-    <div className="sticky z-50 top-0 w-full backdrop-blur-3xl dark px-4 py-2">
-      <div className="justify-between flex items-center">
-        <NavLink
-          to={"/"}
-          className="router-link-active text-gray-300 router-link-exact-active font-medium text-lg"
-        >
-          Paschal E
-        </NavLink>
+    <>
+      {/* --- TOP NAVIGATION BAR (Desktop & Mobile Header) --- */}
+      <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-[#151515]/80 border-b border-white/5 md:border-none py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <NavLink
+            to="/"
+            className="text-xl font-bold tracking-tight text-white"
+          >
+            Paschal<span className="text-blue-500">.</span>
+          </NavLink>
 
-        <div className="flex items-center gap-4">
-          <div className="flex gap-2 items-center">
-            <a href="https://www.github.com/kiddo9" className="">
-              <svg
-                strokeLinejoin="round"
-                strokeLinecap="round"
-                strokeWidth="2"
-                stroke="currentColor"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="w-5 stroke-[#838383] hover:scale-125 duration-200 hover:stroke-gray-500"
-              >
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/elechi-paschal-18ab85312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                className="w-5 stroke-[#838383] hover:scale-125 duration-200 hover:stroke-gray-500"
-              >
-                <path d="M4.98 3.5C4.98 4.88 3.86 6 2.49 6 1.12 6 0 4.88 0 3.5S1.12 1 2.49 1C3.86 1 4.98 2.12 4.98 3.5zM.5 8h4v12h-4V8zm7.5 0h3.6v1.7h.1c.5-.9 1.7-1.8 3.5-1.8 3.7 0 4.4 2.4 4.4 5.5V20h-4v-6.2c0-1.5 0-3.3-2-3.3s-2.3 1.6-2.3 3.2V20h-4V8z" />
-              </svg>
-            </a>
-          </div>
+          {/* Desktop Links (Hidden on Mobile) */}
+          <nav className="hidden md:flex items-center gap-8 bg-white/5 px-6 py-2 rounded-full border border-white/10">
+            <NavLink to="/projects" className={linkStyles}>
+              Projects
+            </NavLink>
+            <NavLink to="/skills" className={linkStyles}>
+              Skills
+            </NavLink>
+            <NavLink to="/resume" className={linkStyles}>
+              Resume
+            </NavLink>
+          </nav>
 
-          <div className="md:border-r-2 py-3 md:relative md:rounded-none backdrop-blur-3xl border md:border-0  border-[#838383] md:border-l-2 md:h-6 md:px-4 rounded-full lg:border-[#838383] flex justify-center gap-5 items-center fixed md:bottom-0 md:left-0 md:right-0 -bottom-[37rem] left-0 right-0 md:bg-transparent bg-[#0000008e]">
-            <ul className="flex text-white md:text-[#838383] gap-4 border-r-2 md:border-r-0 border-[#838383] pr-3">
-              <li>
-                <NavLink
-                  className={({ isActive }: any) =>
-                    isActive
-                      ? "md:text-white md:font-semibold text-green-500 border-b border-green-500 md:border-b-0"
-                      : ""
-                  }
-                  to={"/projects"}
-                >
-                  Projects
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/resume"
-                  className={({ isActive }: any) =>
-                    isActive
-                      ? "md:text-white md:font-semibold text-green-500 border-b border-green-500 md:border-b-0"
-                      : ""
-                  }
-                >
-                  Resume
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={({ isActive }: any) =>
-                    isActive
-                      ? "md:text-white md:font-semibold text-green-500 border-b border-green-500 md:border-b-0"
-                      : ""
-                  }
-                  to="/skills"
-                >
-                  skills
-                </NavLink>
-              </li>
-              <li>
-                <a href={`mailto:paschalelechi0@gmail.com`}>
-                  <p className="text-[#838383]">Hire me</p>
-                </a>
-              </li>
-            </ul>
-            <div className="md:hidden">
-              <DarkLightMode />
+          {/* Right Side: Socials & Actions */}
+          <div className="flex items-center gap-4">
+            {/* Social Icons */}
+            <div className="hidden md:flex items-center gap-3 pr-4 border-r border-gray-800">
+              <a
+                href="https://github.com/kiddo9"
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-400 hover:text-white transition hover:scale-110"
+              >
+                <Github size={20} />
+              </a>
+              <a
+                href="https://linkedin.com/in/elechi-paschal-18ab85312"
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-400 hover:text-white transition hover:scale-110"
+              >
+                <Linkedin size={20} />
+              </a>
             </div>
-          </div>
 
-          <div className="hidden md:block">
+            {/* Hire Me Button */}
+            <a
+              href="mailto:paschalelechi0@gmail.com"
+              className="bg-white text-black text-sm font-semibold px-4 py-2 rounded-full hover:bg-gray-200 transition"
+            >
+              Hire Me
+            </a>
+
+            {/* Dark Mode Toggle */}
             <DarkLightMode />
           </div>
         </div>
+      </header>
+
+      {/* --- MOBILE BOTTOM DOCK (Hidden on Desktop) --- */}
+      {/* This creates a floating "app-like" menu at the bottom of phone screens */}
+      <div className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-sm">
+        <nav className="flex items-center justify-between bg-[#1f1f1f]/90 backdrop-blur-xl border border-white/10 px-6 py-4 rounded-2xl shadow-2xl">
+          <NavLink to="/projects" className={linkStyles}>
+            <Briefcase size={20} className="mb-1" />
+            Projects
+          </NavLink>
+
+          <NavLink to="/skills" className={linkStyles}>
+            <Code size={20} className="mb-1" />
+            Skills
+          </NavLink>
+
+          <NavLink to="/resume" className={linkStyles}>
+            <FileText size={20} className="mb-1" />
+            Resume
+          </NavLink>
+
+          {/* Mobile Socials Trigger (Optional, or just link to GitHub) */}
+          <a
+            href="https://github.com/kiddo9"
+            target="_blank"
+            rel="noreferrer"
+            className="flex flex-col items-center gap-1 text-xs text-gray-500 hover:text-white"
+          >
+            <Github size={20} className="mb-1" />
+            Code
+          </a>
+        </nav>
       </div>
-    </div>
+    </>
   );
 }
 

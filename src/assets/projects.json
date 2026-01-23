@@ -320,5 +320,27 @@
       "github",
       "githubactions"
     ]
+  },
+  {
+    "id": 16,
+    "name": "shopify_storefront_sdk",
+    "d": "A lightweight, developer-friendly Shopify Storefront SDK for Node.js built to simplify integrating with Shopify’s GraphQL Storefront API. It provides ready-to-use queries, typed responses, and a clean API layer that removes boilerplate and helps developers ship faster.",
+    "img": "/Screenshot 2025-04-30 at 2.11.36 PM.png",
+    "link": "https://www.npmjs.com/package/shopify_storefront_sdk",
+    "GitHub": "https://github.com/kiddo9/shopify_storefront_sdk",
+    "linkedIn": "",
+    "year": "2025",
+    "skills": ["nodejs", "typescript", "git", "github"]
+  },
+  {
+    "id": 17,
+    "name": "Smartcampus Attendance And Event Management System",
+    "d": "",
+    "img": "/Screenshot 2025-04-30 at 2.11.36 PM.png",
+    "link": "https://www.npmjs.com/package/shopify_storefront_sdk",
+    "GitHub": "https://github.com/kiddo9/smartcampus-attendance-and-event-management-system",
+    "linkedIn": "",
+    "year": "2026",
+    "skills": ["go", "typescript", "git", "github", "react"]
   }
 ]

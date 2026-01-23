@@ -1,470 +1,377 @@
 import React from "react";
 import {
   Mail,
-  Phone,
   MapPin,
-  Globe,
   Linkedin,
   Github,
-  Award,
-  BookOpen,
-  Users,
+  Globe,
+  Download,
   Briefcase,
+  GraduationCap,
+  Award,
+  Terminal,
+  Cpu,
 } from "lucide-react";
 import FadeUp from "../components/FadeUp";
+import projects from "../assets/projects.json";
 
 const ResumeTemplate = () => {
-  function handleDownload() {
+  const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Resume.pdf"; // Must be a valid URL or public file
-    link.download = "/Resume.pdf"; // Optional: custom file name
+    link.href = "/Resume.pdf";
+    link.download = "Paschal_Elechi_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  }
+  };
+
   return (
     <FadeUp>
-      <div className="max-w-4xl mx-auto p-8 bg-white shadow-lg font-sans">
-        {/* Header Section */}
-        <header className="text-center mb-8 border-b-2 border-gray-200 pb-6">
-          <h1 className="text-4xl font-bold text-gray-800 mb-2">
-            Paschal Elechi
-          </h1>
-          <h2 className="text-xl text-gray-600 mb-4">
-            Backend & DevOps developer
-          </h2>
-
-          {/* Contact Information */}
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
-            <div className="flex items-center gap-1">
-              <Mail size={16} />
-              <span>paschalelechi0@gmail.com</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <Phone size={16} />
-              <span>(234) 9161582765</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <MapPin size={16} />
-              <span>Anambra, Nigeria</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <Linkedin size={16} />
-              <span>linkedin.com/in/elechi-paschal-18ab85312/</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <Github size={16} />
-              <span>github.com/kiddo9</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <Globe size={16} />
-              <span>paschal-portfolio.vercel.app/</span>
-            </div>
+      <div className="w-full max-w-5xl mx-auto pb-20">
+        {/* --- Header & Download Actions --- */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+              Paschal Elechi
+            </h1>
+            <p className="text-xl text-blue-500 font-medium">
+              Backend & DevOps Developer
+            </p>
+            <p className="text-gray-400 mt-2 max-w-lg text-sm leading-relaxed">
+              Building scalable, real-time systems with Node.js, Laravel, and
+              Go. Obsessed with clean architecture and cloud infrastructure.
+            </p>
           </div>
-        </header>
 
-        {/* Professional Summary */}
-        <section className="mb-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-3 flex items-center gap-2">
-            <Briefcase size={20} />
-            Summary
-          </h3>
-          <p className="text-gray-700 leading-relaxed">
-            Experienced Backend Developer with 3+ years of expertise in
-            full-stack, backend and devOps development. Proven track record of
-            developing and deploaying scalable backend services that improve
-            system performance. Passionate about for building scalable,
-            real-time applications .
-          </p>
-        </section>
+          <button
+            onClick={handleDownload}
+            className="group flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all active:scale-95"
+          >
+            <Download size={18} className="group-hover:animate-bounce" />
+            Download CV
+          </button>
+        </div>
 
-        {/* Work Experience */}
-        <section className="mb-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-            <Briefcase size={20} />
-            Work Experience
-          </h3>
-
-          <div className="space-y-6">
-            {/* Job 1 */}
-            <div className="border-l-4 border-blue-500 pl-4">
-              <div className="flex justify-between items-start mb-2">
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-800">
-                    Backend and DevOps developer intern
-                  </h4>
-                  <p className="text-blue-600 font-medium">
-                    Neo cloud technologies
-                  </p>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* --- LEFT COLUMN (Sidebar) --- */}
+          <div className="space-y-8">
+            {/* Contact Info */}
+            <div className="p-6 rounded-2xl border border-white/5 bg-[#1f1f1f]">
+              <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
+                <Terminal size={18} className="text-blue-500" /> Contact
+              </h3>
+              <div className="space-y-4 text-sm text-gray-400">
+                <a
+                  href="mailto:paschalelechi0@gmail.com"
+                  className="flex items-center gap-3 hover:text-white transition"
+                >
+                  <Mail size={16} /> paschalelechi0@gmail.com
+                </a>
+                <div className="flex items-center gap-3">
+                  <MapPin size={16} /> Anambra, Nigeria
                 </div>
-                <span className="text-gray-500 text-sm">
-                  April 2025 - Present
-                </span>
+                <a
+                  href="https://linkedin.com/in/elechi-paschal-18ab85312/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-3 hover:text-white transition"
+                >
+                  <Linkedin size={16} /> LinkedIn Profile
+                </a>
+                <a
+                  href="https://github.com/kiddo9"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-3 hover:text-white transition"
+                >
+                  <Github size={16} /> github.com/kiddo9
+                </a>
+                <a
+                  href="https://paschal-portfolio.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-3 hover:text-white transition"
+                >
+                  <Globe size={16} /> Portfolio
+                </a>
               </div>
-              <ul className="text-gray-700 space-y-1 list-disc list-inside">
-                <li>
-                  Worked in a team in building a CBT QUESTION BANK SYSTEM using
-                  React, Node.js, Nginx and Docker
-                </li>
-                <li>
-                  Implemented CI/CD pipelines reducing deployment time,
-                  authentication and authorization
-                </li>
-                <li>Deployed the application in the cloud using Azure,</li>
-                <li>Presented the Application to the managment</li>
-              </ul>
             </div>
 
-            {/* Job 2 
-          <div className="border-l-4 border-green-500 pl-4">
-            <div className="flex justify-between items-start mb-2">
-              <div>
-                <h4 className="text-lg font-semibold text-gray-800">
-                  Full Stack Developer
+            {/* Education */}
+            <div className="p-6 rounded-2xl border border-white/5 bg-[#1f1f1f]">
+              <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
+                <GraduationCap size={18} className="text-blue-500" /> Education
+              </h3>
+              <div className="relative border-l border-gray-700 ml-2 pl-6 pb-2">
+                <span className="absolute -left-[5px] top-1 h-2.5 w-2.5 rounded-full bg-blue-500"></span>
+                <h4 className="text-white font-medium">
+                  B.Sc. Computer Science
                 </h4>
-                <p className="text-green-600 font-medium">
-                  Digital Innovations Ltd.
+                <p className="text-blue-400 text-xs mb-1">
+                  Igbinedion University, Okada
                 </p>
+                <p className="text-gray-500 text-xs mb-2">2022 - 2026</p>
+                <p className="text-gray-400 text-sm">GPA: 4.91 / 5.0</p>
               </div>
-              <span className="text-gray-500 text-sm">Mar 2019 - Dec 2020</span>
-            </div>
-            <ul className="text-gray-700 space-y-1 list-disc list-inside">
-              <li>
-                Developed responsive web applications using React, Redux, and
-                Express.js
-              </li>
-              <li>
-                Optimized database queries resulting in 50% faster page load
-                times
-              </li>
-              <li>
-                Collaborated with UX/UI designers to implement pixel-perfect
-                designs
-              </li>
-              <li>Integrated third-party APIs and payment gateways</li>
-            </ul>
-          </div>
-
-          {/* Job 3
-          <div className="border-l-4 border-purple-500 pl-4">
-            <div className="flex justify-between items-start mb-2">
-              <div>
-                <h4 className="text-lg font-semibold text-gray-800">
-                  Software Developer
-                </h4>
-                <p className="text-purple-600 font-medium">StartUp Solutions</p>
-              </div>
-              <span className="text-gray-500 text-sm">Jun 2017 - Feb 2019</span>
-            </div>
-            <ul className="text-gray-700 space-y-1 list-disc list-inside">
-              <li>Built RESTful APIs using Python and Django framework</li>
-              <li>
-                Implemented automated testing strategies increasing code
-                coverage to 85%
-              </li>
-              <li>
-                Participated in agile development processes and sprint planning
-              </li>
-              <li>Maintained legacy systems and performed code refactoring</li>
-            </ul>
-          </div>*/}
-          </div>
-        </section>
-
-        {/* Education */}
-        <section className="mb-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-            <BookOpen size={20} />
-            Education
-          </h3>
-
-          <div className="space-y-4">
-            {/*<div className="flex justify-between items-start">
-             <div>
-              <h4 className="text-lg font-semibold text-gray-800">
-                Master of Science in Computer Science
-              </h4>
-              <p className="text-blue-600 font-medium">Stanford University</p>
-              <p className="text-gray-600">
-                Specialization: Software Engineering & AI
-              </p>
-            </div>
-            <span className="text-gray-500 text-sm">2015 - 2017</span>
-          </div> */}
-
-            <div className="flex justify-between items-start">
-              <div>
-                <h4 className="text-lg font-semibold text-gray-800">
-                  Bachelor of Science in Computer Science
-                </h4>
-                <p className="text-blue-600 font-medium">
-                  University of Igbinedion, okada Edo state
+              <div className="relative border-l border-gray-700 ml-2 pl-6 pb-2">
+                <span className="absolute -left-[5px] top-1 h-2.5 w-2.5 rounded-full bg-blue-500"></span>
+                <h4 className="text-white font-medium">Science</h4>
+                <p className="text-blue-400 text-xs mb-1">
+                  Marist Comprehensive College, Nteje
                 </p>
-                <p className="text-gray-600"> GPA: 4.91/5.0</p>
-              </div>
-              <span className="text-gray-500 text-sm">2022 - 2026</span>
-            </div>
-          </div>
-        </section>
-
-        {/* Skills */}
-        <section className="mb-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">
-            Technical Skills
-          </h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <h4 className="font-semibold text-gray-700 mb-2">
-                Programming Languages
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {["JavaScript", "php", "TypeScript", "SQL"].map((skill) => (
-                  <span
-                    key={skill}
-                    className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
-                  >
-                    {skill}
-                  </span>
-                ))}
+                <p className="text-gray-500 text-xs mb-2">2016 - 2022</p>
+                <p className="text-gray-400 text-sm"></p>
               </div>
             </div>
 
-            <div>
-              <h4 className="font-semibold text-gray-700 mb-2">
-                Frameworks & Libraries
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {["React", "Node.js", "Express", "Laravel", "livewire"].map(
-                  (skill) => (
-                    <span
-                      key={skill}
-                      className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
-                    >
-                      {skill}
-                    </span>
-                  )
-                )}
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-gray-700 mb-2">
-                Cloud & DevOps
-              </h4>
+            {/* Key Skills (Compact View) */}
+            <div className="p-6 rounded-2xl border border-white/5 bg-[#1f1f1f]">
+              <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
+                <Cpu size={18} className="text-blue-500" /> Core Stack
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "Azure",
+                  "Go",
+                  "Node.js",
+                  "Laravel",
                   "Docker",
-                  "Kubernetes",
-                  "Github actions",
-                  "Terraform",
-                  "Git",
-                ].map((skill) => (
+                  "mysql",
+                  "PostgreSQL",
+                ].map((tech) => (
                   <span
-                    key={skill}
-                    className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm"
+                    key={tech}
+                    className="px-3 py-1 bg-white/5 text-gray-300 text-xs rounded-md border border-white/10"
                   >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-gray-700 mb-2">Databases</h4>
-              <div className="flex flex-wrap gap-2">
-                {["PostgreSQL", "Redis", "MySQL"].map((skill) => (
-                  <span
-                    key={skill}
-                    className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm"
-                  >
-                    {skill}
+                    {tech}
                   </span>
                 ))}
               </div>
             </div>
           </div>
-        </section>
 
-        {/* Projects */}
-        <section className="mb-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">
-            Key Projects
-          </h3>
+          {/* --- RIGHT COLUMN (Main Content) --- */}
+          <div className="lg:col-span-2 space-y-8">
+            {/* Experience */}
+            <section>
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <Briefcase className="text-blue-500" /> Experience
+              </h3>
 
-          <div className="space-y-4">
-            <div className="border rounded-lg p-4 bg-gray-50">
-              <h4 className="text-lg font-semibold text-gray-800 mb-2">
-                Cbt Question Bank System
-              </h4>
-              <p className="text-gray-700 mb-2">
-                Built a question Bank system that is used in Neo cloud
-                technologies to upload question for there computer based test.
-                implemented Implemented modern React frontend with Node.js
-                backend and PostgreSQL database.
-              </p>
-              <p className="text-sm text-gray-600">
-                <strong>Technologies:</strong> React, Node.js, PostgreSQL,
-                Azure, Docker, Nginx, Tailwindcss
-              </p>
-            </div>
+              <div className="space-y-8">
+                {/* Job 1 */}
+                <div className="relative pl-8 border-l border-gray-800">
+                  <span className="absolute -left-[9px] top-0 h-4 w-4 rounded-full border-4 border-[#151515] bg-blue-500"></span>
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                    <h4 className="text-xl font-bold text-gray-100">
+                      Backend Developer
+                    </h4>
+                    <span className="text-xs font-mono text-gray-500 bg-gray-900 px-2 py-1 rounded">
+                      Dec 2025 - Present
+                    </span>
+                  </div>
+                  <p className="text-blue-400 font-medium mb-3">Rojifi</p>
+                  <ul className="list-disc list-outside ml-4 space-y-2 text-gray-400 text-sm leading-relaxed">
+                    <li>
+                      Contributed to the development of the{" "}
+                      <strong className="text-gray-200">Landing Page</strong>{" "}
+                      using React.js.
+                    </li>
+                    <li>
+                      Developed the core application using{" "}
+                      <strong className="text-gray-200">Docker</strong> and
+                      React.js.
+                    </li>
+                    <li>Built the Admin Panel dashboard using React.js.</li>
+                    <li>
+                      Engineered backend services using Redis, MongoDB,
+                      PostgreSQL, Node.js, Express.js, and Golang.
+                    </li>
+                  </ul>
+                </div>
 
-            <div className="border rounded-lg p-4 bg-gray-50">
-              <h4 className="text-lg font-semibold text-gray-800 mb-2">
-                Real-time Chat Application
-              </h4>
-              <p className="text-gray-700 mb-2">
-                Built a real-time chat web application where users can send
-                friend request and chat in real time using redis for cacheing
-                and pusher as a websocket for real time update
-              </p>
-              <p className="text-sm text-gray-600">
-                <strong>Technologies:</strong> Laravel, Livewire, javascript,
-                php, Redis, pusher, docker, github actions, ci/cd
-              </p>
-            </div>
-          </div>
-        </section>
+                {/* Job 2 */}
+                <div className="relative pl-8 border-l border-gray-800">
+                  <span className="absolute -left-[9px] top-0 h-4 w-4 rounded-full border-4 border-[#151515] bg-blue-500"></span>
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                    <h4 className="text-xl font-bold text-gray-100">
+                      Deputy Director of Technology and Innovations
+                    </h4>
+                    <span className="text-xs font-mono text-gray-500 bg-gray-900 px-2 py-1 rounded">
+                      Nov 2025 - present
+                    </span>
+                  </div>
+                  <p className="text-blue-400 font-medium mb-3">
+                    Igbinedion University, Okada (NACOS)
+                  </p>
+                  <ul className="list-disc list-outside ml-4 space-y-2 text-gray-400 text-sm leading-relaxed">
+                    <li>
+                      Lab Configuration: Prepared the software lab for student
+                      use by installing industry-standard tools (VS Code,
+                      PyCharm, Figma) and setting up virtual environments for
+                      cybersecurity practicals.
+                    </li>
+                    <li>
+                      Resource Sharing: Built an offline library of coding
+                      courses (Web Development, Python, Ethical Hacking) on all
+                      systems, ensuring students had free access to quality
+                      learning materials.
+                    </li>
+                    {/* <li>
+                      Implemented secure CI/CD pipelines with GitHub Actions,
+                      reducing deployment time by 40%.
+                    </li>
+                    <li>
+                      Configured Nginx as a reverse proxy to handle load
+                      balancing and SSL termination.
+                    </li> */}
+                  </ul>
+                </div>
 
-        {/* Certifications */}
-        {/* <section className="mb-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-          <Award size={20} />
-          Certifications
-        </h3>
+                {/* Job 3 */}
+                <div className="relative pl-8 border-l border-gray-800">
+                  <span className="absolute -left-[9px] top-0 h-4 w-4 rounded-full border-4 border-[#151515] bg-blue-500"></span>
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                    <h4 className="text-xl font-bold text-gray-100">
+                      Backend & DevOps Intern
+                    </h4>
+                    <span className="text-xs font-mono text-gray-500 bg-gray-900 px-2 py-1 rounded">
+                      Apr 2025 - Sept 2025
+                    </span>
+                  </div>
+                  <p className="text-blue-400 font-medium mb-3">
+                    Neo Cloud Technologies
+                  </p>
+                  <ul className="list-disc list-outside ml-4 space-y-2 text-gray-400 text-sm leading-relaxed">
+                    <li>
+                      Architected the backend for a{" "}
+                      <strong className="text-gray-200">
+                        CBT Question Bank System
+                      </strong>{" "}
+                      using Node.js and PostgreSQL.
+                    </li>
+                    <li>
+                      Containerized applications using{" "}
+                      <strong className="text-gray-200">Docker</strong> and
+                      orchestrated deployments via Azure.
+                    </li>
+                    <li>
+                      Implemented secure CI/CD pipelines with GitHub Actions,
+                      reducing deployment time by 40%.
+                    </li>
+                    <li>
+                      Configured Nginx as a reverse proxy to handle load
+                      balancing and SSL termination.
+                    </li>
+                  </ul>
+                </div>
 
-        <div className="space-y-2">
-          <div className="flex justify-between items-center">
-            <span className="text-gray-700">
-              AWS Certified Solutions Architect - Professional
-            </span>
-            <span className="text-gray-500 text-sm">2023</span>
-          </div>
-          <div className="flex justify-between items-center">
-            <span className="text-gray-700">
-              Certified Kubernetes Administrator (CKA)
-            </span>
-            <span className="text-gray-500 text-sm">2022</span>
-          </div>
-          <div className="flex justify-between items-center">
-            <span className="text-gray-700">
-              Google Cloud Professional Developer
-            </span>
-            <span className="text-gray-500 text-sm">2021</span>
+                {/* Volunteer Job */}
+                <div className="relative pl-8 border-l border-gray-800">
+                  <span className="absolute -left-[9px] top-0 h-4 w-4 rounded-full border-4 border-[#151515] bg-gray-600"></span>
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                    <h4 className="text-lg font-bold text-gray-300">
+                      Full Stack Volunteer
+                    </h4>
+                    <span className="text-xs font-mono text-gray-500 bg-gray-900 px-2 py-1 rounded">
+                      2025
+                    </span>
+                  </div>
+                  <p className="text-blue-400 font-medium mb-3">
+                    Startup Initiative
+                  </p>
+                  <ul className="list-disc list-outside ml-4 space-y-2 text-gray-400 text-sm leading-relaxed">
+                    <li>
+                      Collaborated with a cross-functional team to build MVP
+                      features for a local startup.
+                    </li>
+                    <li>
+                      Focused on API development and database schema design.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            {/* Key Projects Section */}
+            <section>
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <Award className="text-blue-500" /> Key Projects
+              </h3>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="p-5 rounded-xl bg-gradient-to-br from-[#1f1f1f] to-[#151515] border border-white/5 hover:border-blue-500/30 transition-colors group">
+                  <h4 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors">
+                    {projects[0].name}
+                  </h4>
+                  <p className="text-gray-500 text-sm mt-2 leading-relaxed">
+                    {projects[0].d}
+                  </p>
+                  <div className="mt-4 flex gap-2 text-xs text-gray-400 font-mono flex-wrap">
+                    {projects[0].skills.map((skill: any) => (
+                      <span>#{skill}</span>
+                    ))}
+                    {/* <span>#Laravel</span> <span>#Redis</span>{" "}
+                    <span>#Docker</span> */}
+                  </div>
+                </div>
+
+                <div className="p-5 rounded-xl bg-gradient-to-br from-[#1f1f1f] to-[#151515] border border-white/5 hover:border-blue-500/30 transition-colors group">
+                  <h4 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors">
+                    {projects[2].name}
+                  </h4>
+                  <p className="text-gray-500 text-sm mt-2 leading-relaxed">
+                    {projects[2].d}
+                  </p>
+                  <div className="mt-4 flex gap-2 text-xs text-gray-400 font-mono flex-wrap">
+                    {projects[2].skills.map((skill: any) => (
+                      <span>#{skill}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="p-5 rounded-xl bg-gradient-to-br from-[#1f1f1f] to-[#151515] border border-white/5 hover:border-blue-500/30 transition-colors group">
+                  <h4 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors">
+                    {projects[15].name}
+                  </h4>
+                  <p className="text-gray-500 text-sm mt-2 leading-relaxed">
+                    {projects[15].d}
+                  </p>
+                  <div className="mt-4 flex gap-2 text-xs text-gray-400 font-mono flex-wrap">
+                    {projects[15].skills.map((skill: any) => (
+                      <span>#{skill}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="p-5 rounded-xl bg-gradient-to-br from-[#1f1f1f] to-[#151515] border border-white/5 hover:border-blue-500/30 transition-colors group">
+                  <h4 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors">
+                    {projects[16].name}
+                  </h4>
+                  <p className="text-gray-500 text-sm mt-2 leading-relaxed">
+                    {projects[16].d}
+                  </p>
+                  <div className="mt-4 flex gap-2 text-xs text-gray-400 font-mono flex-wrap">
+                    {projects[16].skills.map((skill: any) => (
+                      <span>#{skill}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="p-5 rounded-xl bg-gradient-to-br from-[#1f1f1f] to-[#151515] border border-white/5 hover:border-blue-500/30 transition-colors group">
+                  <h4 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors">
+                    {projects[14].name}
+                  </h4>
+                  <p className="text-gray-500 text-sm mt-2 leading-relaxed">
+                    {projects[14].d}
+                  </p>
+                  <div className="mt-4 flex gap-2 text-xs text-gray-400 font-mono flex-wrap">
+                    {projects[14].skills.map((skill: any) => (
+                      <span>#{skill}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-      </section>
-
-      {/* Awards & Achievements 
-      <section className="mb-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-          <Award size={20} />
-          Awards & Achievements
-        </h3>
-
-        <ul className="text-gray-700 space-y-2 list-disc list-inside">
-          <li>Employee of the Year 2023 - Tech Solutions Inc.</li>
-          <li>
-            Best Innovation Award for Real-time Analytics Dashboard - 2022
-          </li>
-          <li>
-            Speaker at React Conference 2023 - "Building Scalable React
-            Applications"
-          </li>
-          <li>Open Source Contributor - 500+ GitHub contributions in 2023</li>
-        </ul>
-      </section> */}
-
-        {/* Languages */}
-        <section className="mb-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-            <Globe size={20} />
-            Languages
-          </h3>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div>
-              <span className="font-medium text-gray-700">English</span>
-              <p className="text-gray-600 text-sm">Native</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Volunteer Experience */}
-        <section className="mb-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-            <Users size={20} />
-            Volunteer Experience
-          </h3>
-
-          <div className="space-y-4">
-            <div>
-              <div className="flex justify-between items-start mb-2">
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-800">
-                    Full stack Developer
-                  </h4>
-                  <p className="text-blue-600 font-medium">Backend focused</p>
-                </div>
-                <span className="text-gray-500 text-sm">2025</span>
-              </div>
-              <p className="text-gray-700">
-                volunteered to work as a full stack developer for a startUp
-              </p>
-            </div>
-
-            {/* <div>
-            <div className="flex justify-between items-start mb-2">
-              <div>
-                <h4 className="text-lg font-semibold text-gray-800">
-                  Technical Workshop Leader
-                </h4>
-                <p className="text-blue-600 font-medium">
-                  Local Community Center
-                </p>
-              </div>
-              <span className="text-gray-500 text-sm">2019 - 2021</span>
-            </div>
-            <p className="text-gray-700">
-              Organized and led monthly workshops on web development basics for
-              community members, teaching HTML, CSS, and JavaScript to 100+
-              participants.
-            </p>
-          </div> */}
-          </div>
-        </section>
-
-        {/* Interests */}
-        <section className="mb-6">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">Interests</h3>
-          <p className="text-gray-700">
-            Open Source Development, Machine Learning, Rock Climbing,
-            Blockchain, Traveling, Cooking
-          </p>
-        </section>
-
-        {/* Footer */}
-        <button
-          onClick={handleDownload}
-          className="bg-[#007CED] text-white py-3 px-6 mt-10 rounded w-fit flex gap-4 items-center"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="size-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
-            />
-          </svg>
-          Full Download Resume
-        </button>
       </div>
     </FadeUp>
   );
