@@ -19,7 +19,10 @@ const About = () => {
         "mysql",
         "postgres",
         "redis",
+        "mongodb",
         "grpc",
+        "gin",
+        "gorm",
         "solidity",
         "expressjs",
       ],
@@ -32,7 +35,7 @@ const About = () => {
         "githubactions",
         "aws",
       ],
-      "Tools & Version Control": ["git", "github", "vscode", "postman"],
+      "Tools & Version Control": ["git", "github", "vscode", "postman", "trae"],
     };
 
     // Create the grouped object

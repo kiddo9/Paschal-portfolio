@@ -38,8 +38,8 @@ const ResumeTemplate = () => {
               Backend & DevOps Developer
             </p>
             <p className="text-gray-400 mt-2 max-w-lg text-sm leading-relaxed">
-              Building scalable, real-time systems with Node.js, Laravel, and
-              Go. Obsessed with clean architecture and cloud infrastructure.
+              Building scalable, real-time systems with Node.js and Go. Obsessed
+              with clean architecture and cloud infrastructure.
             </p>
           </div>
 
@@ -133,10 +133,11 @@ const ResumeTemplate = () => {
                 {[
                   "Go",
                   "Node.js",
-                  "Laravel",
                   "Docker",
                   "mysql",
                   "PostgreSQL",
+                  "Redis",
+                  "mongodb",
                 ].map((tech) => (
                   <span
                     key={tech}
@@ -186,6 +187,11 @@ const ResumeTemplate = () => {
                       Engineered backend services using Redis, MongoDB,
                       PostgreSQL, Node.js, Express.js, and Golang.
                     </li>
+                    <li>
+                      Built the version 1 rojifi infra where user can become an
+                      Api service provider and consume our public api. Built
+                      with GO, gin, grpc
+                    </li>
                   </ul>
                 </div>
 
@@ -211,16 +217,15 @@ const ResumeTemplate = () => {
                       cybersecurity practicals.
                     </li>
                     <li>
-                      Resource Sharing: Built an offline library of coding
-                      courses (Web Development, Python, Ethical Hacking) on all
-                      systems, ensuring students had free access to quality
-                      learning materials.
-                    </li>
-                    {/* <li>
-                      Implemented secure CI/CD pipelines with GitHub Actions,
-                      reducing deployment time by 40%.
+                      Resource Sharing: provided courses (Web Development,
+                      Python, Ethical Hacking and SQL) on all systems, ensuring
+                      students had free access to quality learning materials.
                     </li>
                     <li>
+                      Organized a tech awareness event and a mini hackathon for
+                      year 1 year to 3 year student{" "}
+                    </li>
+                    {/*<li>
                       Configured Nginx as a reverse proxy to handle load
                       balancing and SSL termination.
                     </li> */}

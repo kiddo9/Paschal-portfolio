@@ -50,7 +50,7 @@ const Projects = () => {
         </div>
 
         {/* --- SEARCH & FILTER SECTION --- */}
-        <div className="sticky top-20 z-30 bg-[#151515]/90 backdrop-blur-xl py-4 -mx-4 px-4 md:mx-0 md:px-0 border-b border-white/5 md:border-none md:bg-transparent md:backdrop-blur-none md:static">
+        <div className="sticky top-16 z-30 bg-[#151515]/90 backdrop-blur-xl py-4 -mx-4 px-4 md:mx-0 md:px-0 border-b border-white/5 md:border-none md:bg-transparent md:backdrop-blur-none md:static">
           {/* Search Bar */}
           <div className="relative group max-w-lg">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">

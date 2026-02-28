@@ -29,7 +29,7 @@ function Index() {
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed">
             Backend & DevOps Developer specializing in{" "}
             <span className="text-gray-200 font-medium">
-              Laravel, Node.js, and Golang
+              Node.js and Golang
             </span>
             . I design real-time systems, optimized APIs, and cloud
             infrastructure that can handle the heat.
