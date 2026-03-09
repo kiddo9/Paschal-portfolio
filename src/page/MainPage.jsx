@@ -43,12 +43,12 @@ function Index() {
             >
               View Projects <ArrowRight size={18} />
             </NavLink>
-            <a
-              href="/resume"
+            <NavLink
+              to="/resume"
               className="px-6 py-3 border border-gray-700 text-gray-300 font-medium rounded-lg hover:border-gray-500 hover:text-white transition flex items-center gap-2"
             >
               <FileText size={18} /> Resume
-            </a>
+            </NavLink>
           </div>
         </section>
 
@@ -72,18 +72,20 @@ function Index() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {Projects.slice(0, 4).map((project) => (
-              <ProjectDisplayCard
-                access={project.link}
-                key={project.id}
-                name={project.name}
-                description={project.d}
-                stack={project.skills}
-                linkedIn={project.linkedIn}
-                github={project.GitHub}
-                type="img"
-              />
-            ))}
+            {[Projects[0], Projects[15], Projects[16], Projects[17]].map(
+              (project) => (
+                <ProjectDisplayCard
+                  access={project.link}
+                  key={project.id}
+                  name={project.name}
+                  description={project.d}
+                  stack={project.skills}
+                  linkedIn={project.linkedIn}
+                  github={project.GitHub}
+                  type="img"
+                />
+              ),
+            )}
           </div>
 
           {/* Mobile "View All" button */}

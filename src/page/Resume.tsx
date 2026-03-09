@@ -170,7 +170,9 @@ const ResumeTemplate = () => {
                       Dec 2025 - Present
                     </span>
                   </div>
-                  <p className="text-blue-400 font-medium mb-3">Rojifi</p>
+                  <p className="text-blue-400 font-medium mb-3">
+                    Rojifi Technology INC
+                  </p>
                   <ul className="list-disc list-outside ml-4 space-y-2 text-gray-400 text-sm leading-relaxed">
                     <li>
                       Contributed to the development of the{" "}
