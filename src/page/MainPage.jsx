@@ -21,7 +21,8 @@ function Index() {
 
           {/* Headline */}
           <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight">
-            I'm <span className="text-blue-500">Paschal Elechi</span>.<br />
+            I&apos;m <span className="text-blue-500">Paschal Elechi</span>.
+            <br />
             <span className="text-gray-500">I build scalable backends.</span>
           </h1>
 
