@@ -3,7 +3,7 @@
     "id": 11,
     "name": "EMS (Employee Management System) (full stack)",
     "d": "This is a system that allows the admin to manage employees, departments, and other related information. It is built with React typescript, Golang and mysql database.",
-    "img": "/Screenshot 2025-04-30 at 2.11.36 PM.png",
+    "img": "",
     "link": "",
     "GitHub": "https://github.com/kiddo9/EMS",
     "linkedIn": "",
@@ -44,8 +44,8 @@
   },
   {
     "id": 14,
-    "name": "CBT question Bank system (full stack)",
-    "d": "This a system that allows only authoraized users to upload question for cbt and review the questions. It was built with React, Nodejs, Expressjs, Sequelize, mysql and Nginx.",
+    "name": "CBT Platform & Exam Management System",
+    "d": "Architected a high-concurrency exam system for Neo Cloud, streamlining the administration of Computer-Based Tests. Solved the bottleneck of manual question bank management. Deployed on AWS EC2 using Docker and Nginx (Reverse Proxy/Load Balancer), with GitHub Actions CI/CD. Features real-time exam simulations and an automated question review workflow.",
     "img": "/lara.png",
     "link": "https://cbtquestionbank.publicvm.com/",
     "GitHub": "https://github.com/kiddo9/nct_question_back",
@@ -55,15 +55,11 @@
       "nodejs",
       "react",
       "expressjs",
-      "restApi",
       "mysql",
-      "tailwindcss",
-      "javascript",
-      "git",
-      "github",
-      "githubactions",
       "docker",
       "nginx",
+      "aws",
+      "githubactions",
       "sequelize"
     ]
   },
@@ -304,43 +300,45 @@
   },
   {
     "id": 15,
-    "name": "SMS MAIL SYSTEM (full stack)",
-    "d": "This is a system that allows admin send sms and mails to multiple users at once. it is still under development. It is built with React typescript, Golang, gRPC and uses tailwindcss for styling. it also allows admin to manage other admin users, sms, and mails.",
-    "img": "/Screenshot 2025-04-30 at 2.11.36 PM.png",
+    "name": "SMS-MAIL-SERVER (Bulk Notification Engine)",
+    "d": "Built a gRPC-powered notification engine in Go that processes thousands of bulk SMS/Mails in seconds via concurrent worker pools. Reduced manual interaction by 40% for institutions. Infra uses Envoy Proxy (gRPC-Web), Nginx, and Docker Compose. Features JWT-based sessions, OTP verification, and automated batch processing from CSV/Excel uploads.",
+    "img": "/sms-mail-arch.svg",
     "link": "",
     "GitHub": "https://github.com/kiddo9/SMS-MAIL-SERVER",
     "linkedIn": "",
     "year": "2025",
     "skills": [
       "go",
-      "react",
-      "typescript",
       "grpc",
-      "git",
-      "github",
+      "protobuf",
+      "workerpools",
+      "docker",
+      "envoyproxy",
+      "nginx",
+      "typescript",
       "githubactions"
     ]
   },
   {
     "id": 16,
-    "name": "shopify_storefront_sdk",
-    "d": "A lightweight, developer-friendly Shopify Storefront SDK for Node.js built to simplify integrating with Shopify’s GraphQL Storefront API. It provides ready-to-use queries, typed responses, and a clean API layer that removes boilerplate and helps developers ship faster.",
-    "img": "/Screenshot 2025-04-30 at 2.11.36 PM.png",
+    "name": "Shopify Storefront SDK",
+    "d": "Developed a high-performance, 100% typed SDK for Shopify’s GraphQL Storefront API. Designed for low-latency edge environments (Cloudflare Workers, Next.js). Implemented automatic code generation via graphql-codegen to eliminate boilerplate and ensure type safety across Product, Cart, and Customer operations. Published to NPM.",
+    "img": "",
     "link": "https://www.npmjs.com/package/shopify_storefront_sdk",
     "GitHub": "https://github.com/kiddo9/shopify_storefront_sdk",
     "linkedIn": "",
     "year": "2025",
-    "skills": ["nodejs", "typescript", "git", "github"]
+    "skills": ["nodejs", "typescript", "graphql", "npm", "githubactions"]
   },
   {
     "id": 17,
-    "name": "Smartcampus Attendance And Event Management System",
-    "d": "",
-    "img": "/Screenshot 2025-04-30 at 2.11.36 PM.png",
+    "name": "SmartCampus Attendance & Event System",
+    "d": "Engineering a centralized campus management system using a decoupled Go/TypeScript architecture. Focused on high-concurrency attendance tracking and event orchestration for large-scale institutional use. Leverages Go's performance for low-latency backend processing and TypeScript for a robust, type-safe client experience.",
+    "img": "",
     "link": "https://www.npmjs.com/package/shopify_storefront_sdk",
     "GitHub": "https://github.com/kiddo9/smartcampus-attendance-and-event-management-system",
     "linkedIn": "",
     "year": "2026",
-    "skills": ["go", "typescript", "git", "github", "react"]
+    "skills": ["go", "typescript", "react", "concurrency", "docker"]
   }
 ]

@@ -38,8 +38,7 @@ const ResumeTemplate = () => {
               Backend & DevOps Developer
             </p>
             <p className="text-gray-400 mt-2 max-w-lg text-sm leading-relaxed">
-              Building scalable, real-time systems with Node.js and Go. Obsessed
-              with clean architecture and cloud infrastructure.
+              Building scalable, real-time systems with Node.js and Go. &quot;I got into infrastructure because I was tired of building APIs that worked locally but broke in production. Now, I design both the service and the environment it runs on.&quot;
             </p>
           </div>
 

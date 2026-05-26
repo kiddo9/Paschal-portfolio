@@ -9,6 +9,7 @@ function ProjectDisplayCard({
   github,
   linkedIn,
   access, // This is your "Live Demo" link
+  img, // Optional project image or diagram
 }: any) {
   // Helper to determine if the repo is private
   const isPrivate = !github || github === "";
@@ -70,6 +71,17 @@ function ProjectDisplayCard({
             )}
           </div>
         </div>
+
+        {/* Project Image/Diagram */}
+        {img && (
+          <div className="mb-6 overflow-hidden rounded-lg border border-gray-800 bg-black/50 aspect-video flex items-center justify-center">
+            <img 
+              src={img} 
+              alt={`${name} Architecture`} 
+              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        )}
 
         {/* Description */}
         <p className="text-gray-400 text-sm leading-relaxed mb-6">
